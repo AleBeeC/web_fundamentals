@@ -1,0 +1,38 @@
+* {
+    background-color: rgb(255, 181, 216);
+    text-align: center;
+}
+
+#Quote {
+    color: white;
+    font-family: Times New Roman;
+    font-size: 15px;
+}
+
+header h1 {
+    color: White;
+}
+
+header h1:hover {
+    color: black
+}
+
+#Name {
+    color: white;
+}
+
+ol {
+    padding: 10px
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+}
+
+#Second {
+    color: White;
+    font-size: 3em;
+    font-family: Times New Roman;
+}
+
