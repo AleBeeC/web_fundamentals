@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: rgb(107, 107, 107);
+}
+header div {
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+}
+
+p{
+    background-color: darkgrey;
+}
+#image1 {
+    border: 10px, rgb(68, 68, 68);
+    border-radius: 50%;
+    padding: 70px;
+    width: 25%
+}
+#image2 {
+    border: 10px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 50%;
+    padding: 70px;
+    width: 25%;
+}
+#image3 {
+    border: 10px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 50%;
+    padding: 70px;
+    width: 25%;
+}
