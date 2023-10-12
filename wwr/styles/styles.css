@@ -28,10 +28,6 @@ main section img {
     box-sizing: border-box;
 }
 
-#background {
-    height: 725px;
-}
-
 body {
     background-color: #ffffff; 
     font-family: 'Rokkitt', 'Verdana', 'sans-serif';
@@ -78,6 +74,7 @@ nav a:hover {
 
 #background {
     background-color: #e6e5c8; 
+    height: 725px;
 }
 
 .msg {
