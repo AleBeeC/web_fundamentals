@@ -166,6 +166,8 @@ footer {
     color: #476a87;
     padding: 25px 50px;
     margin-top: 200px;
+    max-width: 1500px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -228,6 +230,188 @@ footer .social img {
     padding-top: 15px;
 }
 
+/*   ---- NEW PAGE - BLOG ----    */
+
+.heading_front {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.parallax {
+    background-image: url("https://byui-wdd.github.io/wdd130/resources/images/rafting11_1024.jpg");
+  
+    min-height: 600px;
+    max-width: 1600px;
+  
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1/7;
+    grid-column: 1/6;
+    margin: 0;
+    padding: 0
+  }
+
+.blog_backing {
+    background-color: #ffffff;
+    z-index: 1;
+    grid-row: 2/4;
+    grid-column: 2/4;
+    opacity: 60%;
+    border-radius: 25px;
+    padding: 0;
+
+}
+
+.blog_heading {
+    grid-row: 2/4;
+    grid-column: 2/4;
+    z-index: 2;
+    font-size: 110px;
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Patrick Hand SC', 'Helvetica', 'sans-serif';
+}
+
+.blog-grid {
+    margin: 0 auto;
+    max-width: 1600px;
+    height: fit-content;
+    background-color: #667358;
+    padding: 60px 0 30px 0;
+}
+
+.blog_post {
+    background-color: #e6e5c8;
+    margin: 00px 30px 50px 15%;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 35px 35px 10px 35px;
+    height: fit-content;
+}
+
+.p2_heading {
+    font-size: 50px;
+    font-weight: bold;
+    color: #476a87;
+    font-family: 'Patrick Hand SC', 'Helvetica', 'sans-serif';
+}
+
+.date {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 1000px;
+    color: #6b6a54;
+}
+
+
+.post_1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.post_2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.text_content {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    font-size: 25px;
+    padding: 6rem 0 6rem 0;
+    color: #476a87;
+}
+
+.summer {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 320px; 
+    height: 300px; 
+    object-fit: cover;
+    padding: 0;
+    margin-bottom: px;
+}
+
+.second_wide {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    width: 1000px; 
+    height: 150px; 
+    object-fit: cover;
+    padding: 0;
+}
+
+.second_text_content_1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 1000px;
+    font-size: 25px;
+    color: #476a87;
+}
+
+.second_text_content_2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 25px;
+    padding: 6rem 0 0rem 21rem;
+    color: #476a87;
+}
+
+.cold_img {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 320px; 
+    height: 300px; 
+    object-fit: cover;
+    padding: 0;
+}
+
+.second_text_content_3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 1000px;
+    font-size: 25px;
+    color: #476a87;
+}
+
+/* .third_text_content_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 1000px;
+    font-size: 25px;
+}
+
+.scorpion {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 320px; 
+    height: 300px; 
+    object-fit: cover;
+    padding: 0;
+    margin-right: 700px;
+    margin-top: 50px;
+}
+
+.blog_3_em {
+    text-align: center;
+    font-size: 25px;
+    padding: 0rem 0 0rem 21rem;
+    margin-bottom: px;
+}
+
+.sidepara_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 25px;
+    padding: 6rem 0 0rem 21rem;
+} */
 
 
 
