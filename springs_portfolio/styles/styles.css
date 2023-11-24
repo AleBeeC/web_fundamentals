@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Signika+Negative&display=swap');
+
+#content {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    color: #95a4be;
+    text-decoration: none;
+    padding: 25px;
+    padding-left: 160px
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    background-color: #312D45; 
+}
+
+.logo_box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.logo_box a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.logo_link {
+    padding: 0 auto;
+}
+
+.logo {
+    max-height: 200px;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Signika Negative', 'Helvetica', 'sans-serif';
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    overflow: hidden;
+}
+
+.background_img {
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    opacity: 60%;
+    grid-column: 1/6;
+    grid-row: 1/5;
+}
+
+.main_content_block {
+    background-color: #F2F0FF;
+    margin: auto;
+    width: 70%;
+    border-radius: 20px;
+    border: 5px solid #95a4be;
+    padding: 35px 35px 10px 35px;
+    height: fit-content;
+    grid-column: 1/6;
+    grid-row: 1/5;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 130px 1fr 1fr 70px;
+    max-height: 1107px;
+}
+
+.heading {
+    font-size: 50px;
+    padding: 0;
+    margin: 0px 0px 40px 0px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    color:#FF0055;
+    font-family: 'Girassol', 'Helvetica', 'sans-serif';
+}
+
+nav a:hover {
+    color: #F2F0FF;
+}
+
+.cartoon_face {
+    width: 250px; 
+    height: auto; 
+    object-fit: cover;
+    padding: 0px 0px 0px 100px;
+    margin-bottom: 0px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 20px;
+}
+.top_text_content {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin-top: 60px;
+    font-size: 22px
+}
+
+.paragraph {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.ending_paragraph {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+footer {
+    background-color: #312D45; 
+    color: #F2F0FF;
+    padding: 25px 50px;
+    margin-top: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #F2F0FF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F2F0FF;
+}
