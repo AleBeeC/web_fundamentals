@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Spring's Portfolio | Art Examples </title>
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo1.png" alt="Spring's Logo">
-            </a>
+            <div class="logo_box">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/logo1.png" alt="Spring's Logo">
+                </a>
+            </div>
             <nav id="nav_links">
                 <a href="index.html">Home</a>
                 <a href="artexamples.html">Art Examples</a>
@@ -19,29 +22,47 @@
         </header>
         <main class="main_content">
             <div class="background">
-                <div class="main_content_block">
+                <div class="main_content_blockk">
                     <p class="heading">Commission Details</p>
                 <div class="contact_block">
                     <img class="disc_img" src="images/discord_icon.png" alt="discord icon">
                     <p>Contact Me</p>
                     <img class="gmail_img" src="images/gmail_icon.png" alt="gmail icon">
                 </div>
-                <p class="question_paragraph">How does the commission process work?</p>
-                <ul class="process_list">
-                    <li>First, have an idea in mind for what you'd like the art piece to look like, taking in consideration my TOS and the types of art being offered at the moment.</li>
-                    <li>Second, contact me either through my email, alebee7392@gmail.com, or through Discord at vintagespring, explaining that you’d like to commission me. Include all the specific details, including the type of art wanted, the characters you’d like, their expression, pose, type of character interactions (if applicable), any references if needed, and anything else you’d like me to include!</li>
-                    <li>Third, wait for a response! I will generally get back to you within a 24-hour period (excluding weekdays.)</li>
-                    <li>Fourth, If your commission request is accepted, you will send the payment upfront through Paypal, and I will begin working on it and get a first initial sketch to you within 1-2 weeks so you can look it over and decide on any changes (not applicable to art pieces of sketch style.)</li>
-                    <li>Fifth, wait! Depending on the type of artwork requested it can take anywhere from 1-4 weeks to be completed.</li>
-                    <li>Sixth, review artwork after completion for any minor changes wanted. If it looks good to you, then the process is finished!</li>
-                </ul>
+                <button class="accordion">How does the commission process work?</button>
+                <div class="panel">
+                    <ul class="process_list">
+                        <li>First, have an idea in mind for what you'd like the art piece to look like, taking in consideration my TOS and the types of art being offered at the moment.</li>
+                        <li>Second, contact me either through my email, alebee7392@gmail.com, or through Discord at vintagespring, explaining that you’d like to commission me. Include all the specific details, including the type of art wanted, the characters you’d like, their expression, pose, type of character interactions (if applicable), any references if needed, and anything else you’d like me to include!</li>
+                        <li>Third, wait for a response! I will generally get back to you within a 24-hour period (excluding weekdays.)</li>
+                        <li>Fourth, If your commission request is accepted, you will send the payment upfront through Paypal, and I will begin working on it and get a first initial sketch to you within 1-2 weeks so you can look it over and decide on any changes (not applicable to art pieces of sketch style.)</li>
+                        <li>Fifth, wait! Depending on the type of artwork requested it can take anywhere from 1-4 weeks to be completed.</li>
+                        <li>Sixth, review artwork after completion for any minor changes wanted. If it looks good to you, then the process is finished!</li>
+                    </ul>
+                </div>
                 <div class="accordian_section">
-                    <details class="accordian">
-                        <summary>Terms of Service</summary>
+                    <button class="accordion">Terms of Service</button>
+                    <div class="panel">
                         <p>Prices are subject to change as I grow; customers who have ordered before any changes were made are not affected by the price change. Tips are appreciated, but not expected. Customers reserve the right to ask for refunds at any point in time: If the piece is at the (completed) initial sketch phase, refunds won’t be given. You will get a full refund if a piece being worked on has not reached the initial sketch phase. I reserve the right to cancel and refund commissions at any time for any reason. I reserve the right to refuse any commission. I, the artist, hold the right to the produced creation, not the commissioner. Artwork is not made with commercial use in mind; all artwork is for personal use only. Customers can post the artwork on different websites with proper credit given. Customers are not able to modify the artwork in any significant way (including removing signatures.) Cropping, rotating, etc. is allowed. I retain the rights to post the commission work on my portfolio and examples for advertising purposes.</p>
-                    </details>
+                    </div>
                 </div>
             </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                      panel.style.maxHeight = null;
+                    } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                  });
+                }
+                </script>
         </main>
         <footer>
             <p>Spring's Portfolio &copy; 2023</p>
